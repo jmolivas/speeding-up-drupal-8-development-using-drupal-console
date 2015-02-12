@@ -23,10 +23,11 @@
 		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
 		<link rel="stylesheet" href="lib/css/tomorrow-night-bright.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<!-- If the query includes 'print-pdf', use the PDF print sheet 
 		<script> 	document.write( '<link rel="stylesheet" href="css/print/' + (
 		window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css"
 		type="text/css" media="print">' ); </script>
+		-->
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -42,13 +43,25 @@
 
 				<section>
 					<h1 class="medium">Drupal 8 Console</h1>
-					<h2><strike>scaffolding module generator</strike></h2>
+					<h2>(Scaffolding module generator)</h2>
 					<br/>
 					<h3>DrupalCon Latin America 2015</h3>
+					<p>
+						<br/>
+						<a href="http://bit.ly/console-bogota">http://bit.ly/console-bogota</a>
+					</p>
 				</section>
 
 				<section>
 					<h1 class="medium">Speeding up Drupal 8 development using Drupal Console</h1>
+					<aside class="notes">
+						<p>
+							Probably a title like 'Speeding up Drupal 8 development using Drupal Console' is more apropiated for this presentation.
+						</p>
+						<p>
+							Since project was started and even when this session was propossed the project has been evolving and now is no 
+						</p>
+					</aside>
 				</section>
 
 				<section>
@@ -118,8 +131,7 @@
 						<aside class="notes">
 							<p>
 							Some of you may have begun to explore Drupal 8 already,
-							for those of you that have not had a chance yet I can tell you
-							that there is a whole new new set of concepts.
+							for those of you that have not had a chance yet I can tell you that there is a whole new set of concepts.
 						</p>
 						<p>
 							Drupal 8 is more advanced compared to its predecessor,
@@ -152,6 +164,7 @@
 						<h3 class="title">
 							The purpose of this project is to leverage the Symfony Console Component. 
 						</h3>
+						<br/>
 						<h3 class="title">
 							The Console is a CLI tool that automates the creation of Drupal 8 modules and other recurring tasks.
 						</h3>
@@ -179,6 +192,20 @@
 							<img src="assets/images/dmouse.jpg" class="avatar">
 							<p>David Flores ‏</p>
 							<p><strong>@dmouse</strong></p>
+						</div>
+					</section>
+
+					<section>
+						<h2>Who else is maintainig it?</h2>
+						<div class="half">
+							<img src="assets/images/enzolutions.jpg" class="avatar">
+							<p>Eduardo García</p>
+							<p><strong>@enzolutions</strong></p>
+						</div>
+						<div class="half">
+							<img src="assets/images/omero.jpg" class="avatar">
+							<p>Omar Aguirre</p>
+							<p><strong>@omers</strong></p>
 						</div>
 					</section>
 
@@ -212,10 +239,16 @@
 					<section>
 						<h2>Drupal learning curve</h2>
 						<img class="no-border" src="assets/images/learning-curve-drupal.jpg">
+						<aside class="notes">
+							As we all now and have experienced Drupal 8 is little more complex that other CMS projects.
+						</aside>
 					</section>
 					<section>
 						<h2>Drupal 8 learning curve</h2>
 						<img class="no-border" src="assets/images/learning-curve-drupal-8.jpg">
+						<aside class="notes">
+							What may do not know is Drupal 8 is technically advanced compared to its predecessor.
+						</aside>
 					</section>
 					<section>
 						<h2>A lot of new concepts</h2>
@@ -236,11 +269,12 @@
 					</section>
 					<section>
 						<h3>A lot of code to write</h3>
-						<img class="no-border" src="assets/images/controller-code.png">
+						<img class="no-border" src="assets/images/generate-controller.png">
 						<aside class="notes">
 						<p>Creating a simple page to read an argument form the URL and use two services from the service container:</p>
 						<br/>
 						<ul>
+							<li>2 new files must be created (Route & Controller Class).</li>
 							<li>7 lines of code for route registration.</li>
 							<li>55 lines of code on the Controller class.</li>
 						</ul>
@@ -250,6 +284,14 @@
 					<section>
 						<h3>A lot of directories & files</h3>
 						<img class="no-border" src="assets/images/generate-entity-content.png">
+						<aside class="notes">
+						<p>Creating a entity content:</p>
+						<br/>
+						<ul>
+							<li>13 files must be created/update</li>
+							<li>Hundreds lines of code Classes, Routing, Controllers, Formsm, etc.</li>
+						</ul>
+						</aside>
 					</section>
 				</section>
 
@@ -285,18 +327,18 @@
 						<h2>Who will benefit from using it?</h2>
 						<br/>
 						<p>
-							<p><strong>Module Maintainers & Developers</strong></p>
-							Create & Migrate contributed modules to Drupal 8.
+							<p><strong>Drupal Trainers & Consultors</strong></p>
+							Training developers on Drupal 8.
 						</p>
 						<br/>
 						<p>
-							<p><strong>Drupal Trainers & Consultors</strong></p>
-							Train developers on Drupal 8.
+							<p><strong>Module Maintainers & Developers</strong></p>
+							Creating contributed modules to Drupal 8.
 						</p>
 						<br/>
 						<p>
 							<p><strong>Drupal Shops</strong></p>
-							Reduce module development time for Drupal 8.
+							Reducing development time for Drupal 8 projects.
 						</p>
 					</section>
 	</section>
@@ -319,16 +361,6 @@
 			<li>Takes advantage of OOP and modern development practices.</li>
 			<li>No plans to support previous versions of Drupal.</li>
 		</ul>
-	</section>
-
-	<section>
-		<h2>DISCLAIMER</h2>
-		<p>
-			<h3 class="title">
-			We are happy to contribute to other projects but the foundations of
-			the Console project are OOP and Symfony components (console, twig, etc).
-			</h3>
-		</p>
 	</section>
 
 	<section>
@@ -357,9 +389,7 @@
 				Do you have a Github account?
 			</p>
 			<p>
-			<a href="https://github.com/hechoendrupal/DrupalAppConsole">
-				https://github.com/hechoendrupal/DrupalAppConsole
-			</a>
+			<a href="http://bit.ly/console-code">http://bit.ly/console-code</a>
 			</p>
 		</section>
 
@@ -370,16 +400,14 @@
 				Documentation book at:
 			</p>
 			<p>
-				<a href="http://hechoendrupal.gitbooks.io/drupal-console/">
-					http://hechoendrupal.gitbooks.io/drupal-console/
-				</a>
+				<a href="http://bit.ly/console-book">http://bit.ly/console-book</a>
 			</p>
 			<br/>
 			<br/>
 			<p>
 				Please RTFM and then ping us at:
 			</p>
-				<a href="https://gitter.im/hechoendrupal/DrupalAppConsole">https://gitter.im/hechoendrupal/DrupalAppConsole</a>
+				<a href="http://bit.ly/console-chat">http://bit.ly/console-chat</a>
 		</section>
 
 		<section>
@@ -409,10 +437,6 @@ $ drupal generate:module
 		</section>
 
 		<section>
-			<h1>Using the Installer video</h1>
-		</section>
-
-		<section>
 			<h2>Using Composer</h2>
 <p>You can use composer to install console globally using the following command:</p>
 <pre><code class="bash">
@@ -435,15 +459,20 @@ $ console
 			<h2>Download the phar file</h2>
 <p>You can download the latest version of Console from the repository releases page at:</p>
 <br/>
-<p><a href="https://github.com/hechoendrupal/DrupalAppConsole/releases">
-	https://github.com/hechoendrupal/DrupalAppConsole/releases
-</a></p>
+<p><a href="http://bit.ly/console-releases">http://bit.ly/console-releases</a></p>
 <br/>
 <p>Make sure you download the console.phar file from the most current release.</p>
 <pre><code class="bash">
 $ php console.phar
 
 </code></pre>
+		</section>
+
+		<section>
+			<h3>Using the installer</h3>
+			<video preload="none" controls width="720" height="530">
+				<source src="assets/video/installer.mp4" type="video/mp4">
+			</video>
 		</section>
 
 		<section>
@@ -459,6 +488,13 @@ $ console self-update
 $ php console.phar self-update
 
 </code></pre>
+		</section>
+
+		<section>
+			<h3>Using the self-update command</h3>
+			<video preload="none" controls width="720" height="530">
+				<source src="assets/video/self-update.mp4" type="video/mp4">
+			</video>
 		</section>
 
 	</section>
@@ -487,35 +523,61 @@ generate
 		</section>
 
 		<section>
-<h3>generate:module - video</h3>
+			<h3>Using the generate:module command</h3>
+			<video preload="none" controls width="720" height="530">
+				<source src="assets/video/generate-module.mp4" type="video/mp4">
+			</video>
 		</section>
 
 		<section>
-<h3>generate:service - video</h3>
-* container:debug <br/>
-* cache:rebuild
+			<h3>Using the generate:service command</h3>
+			<video preload="none" controls width="720" height="530">
+				<source src="assets/video/generate-service.mp4" type="video/mp4">
+			</video>
+		</section>
+
+
+		<section>
+			<h3>Using the generate:controller command</h3>
+			<video preload="none" controls width="720" height="530">
+				<source src="assets/video/generate-controller.mp4" type="video/mp4">
+			</video>
 		</section>
 
 		<section>
-<h3>generate:controller - video</h3>
+			<h3>Using the generate:form:config command</h3>
+			<video preload="none" controls width="720" height="530">
+				<source src="assets/video/generate-form-config.mp4" type="video/mp4">
+			</video>
 		</section>
 
 		<section>
-<h3>generate:form:config - video</h3>
-* router:debug <br/>
-* router:rebuild
+			<h3>Using the generate:plugin:block command</h3>
+			<video preload="none" controls width="720" height="530">
+				<source src="assets/video/generate-plugin-block.mp4" type="video/mp4">
+			</video>
 		</section>
 
 		<section>
-<h3>generate:plugin:block - video</h3>
+			<h3>Using generate:plugin:rest:* commands</h3>
+			<br/>
+			<br/>
+			<p>
+				<strong>Presenter:</strong> Omar Aguirre <br/>
+				<strong>Tuesday:</strong> 3:45pm - 4:45pm <br/>
+				<strong>Room:</strong> Salon Auditorium - Just Digital<br/>
+			</p>
+			<br/>
+			<br/>
+			<p>
+			<a href="http://bit.ly/drupal-headless">http://bit.ly/drupal-headless</a></p>
 		</section>
 
 		<section>
-<h3>generate:plugin:rest:resource - video</h3>
-		</section>
-
-		<section>
-<h3>generate:entity:content - video</h3>
+			<h3>Using generate:entity:content command</h3>
+			<video preload="none" controls width="720" height="530">
+				<source src="assets/video/generate-entity-content.mp4" type="video/mp4">
+			</video>
 		</section>
 
 		<section>
@@ -547,20 +609,31 @@ router
 		</section>
 
 		<section>
-<h3>shell + drush - video</h3>
+			<h3>Using the --shell option</h3>
+			<video preload="none" controls width="720" height="530">
+				<source src="assets/video/drush.mp4" type="video/mp4">
+			</video>
 		</section>
 
 		<section>
-<h3>config:debug - video</h3>
+			<h3>Using config:debug command</h3>
+			<video preload="none" controls width="720" height="530">
+				<source src="assets/video/config-debug.mp4" type="video/mp4">
+			</video>
 		</section>
 
 		<section>
-<h3>router - video</h3>
+			<h3>Using module:* commands</h3>
+			<video preload="none" controls width="720" height="530">
+				<source src="assets/video/module-webprofiler.mp4" type="video/mp4">
+			</video>
 		</section>
 
 		<section>
-<h3>module - video</h3>
-* webprofiler (contributed)
+			<h3>Using generate:command command</h3>
+			<video preload="none" controls width="720" height="530">
+				<source src="assets/video/generate-command.mp4" type="video/mp4">
+			</video>
 		</section>
 
 	</section>
@@ -574,14 +647,38 @@ router
 		<section>
 			<p>
 			<h2>Contribute code</h2>
-			<a href="https://github.com/hechoendrupal/DrupalAppConsole">https://github.com/hechoendrupal/DrupalAppConsole</a>
+			<a href="http://bit.ly/console-code">http://bit.ly/console-code</a>
 		</p>
 		<br/>
 		<p>
 			<h2>Contribute documentation</h2>
-			<a href="https://github.com/hechoendrupal/drupal-console-book">https://github.com/hechoendrupal/drupal-console-book</a>
+			<a href="http://bit.ly/console-book">http://bit.ly/console-book</a>
 		</p>
 		<br/>
+		</section>
+
+		<section>
+			<h2>Translations</h2>
+			<br/>
+			<ul class="bullets">
+				<li><strong>en:</strong> The Module name.</li>
+				<li><strong>es:</strong> Nombre del módulo.</li>
+				<li><strong>fr:</strong> Le Nom du Module.</li>
+				<li><strong>pt:</strong> O nome do módulo.</li>
+			</ul>
+			<br/><br/>
+			<p>
+				<a href="http://bit.ly/console-translations">http://bit.ly/console-translations</a>
+			</p>
+		</section>
+
+		<section>
+			<h2>
+				<h3 class="title">Spread the word and love about it</h3>
+				<br/>
+				<h3 class="title">@drupalconsole</h3>
+				<h3 class="title">#drupalconsole</h3>
+			</h2>
 		</section>
 
 		<section>
@@ -595,7 +692,7 @@ router
 			</ul>
 			<p>
 				<br/>
-				<a href="http://hechoendrupal.gitbooks.io/drupal-console/content/how-to-contribute/project-requirements.html">http://hechoendrupal.gitbooks.io/drupal-console/content/how-to-contribute/project-requirements.html</a>
+				<a href="http://bit.ly/console-project-requirements">http://bit.ly/console-project-requirements</a>
 			</p>
 		</section>
 
@@ -603,7 +700,7 @@ router
 			<h2>Getting the project</h2>
 			<p>Fork your own copy of the Console repository</p>
 			<p>
-			<a href="https://github.com/hechoendrupal/DrupalAppConsole/fork">https://github.com/hechoendrupal/DrupalAppConsole/fork</a>
+			<a href="http://bit.ly/console-fork">http://bit.ly/console-fork</a>
 			</p>
 			<br/>
 			<p>Get a copy of your cloned repository in your machine.</p>
@@ -621,50 +718,36 @@ $ composer update --no-dev
 		</section>
 
 		<section>
-			<h2>Running the project</h2>
-			<p>After using composer to download dependencies execute:</p>
-<pre><code class="bash">
-$ bin/console
-
-</code></pre>
-			<br/>
-			<p>Access console from anywhere on your system:</p>
-<pre><code class="bash text-medium">
-$ sudo ln -s /path/to/DrupalAppConsole/bin/console /usr/local/bin/console.dev
-
-</code></pre>
-			<br/>
-			<p>To create a Phar file base in your dev version execute:</p>
-<pre><code class="bash">
-$ cd /path/to/DrupalAppConsole
-$ box build
-
-</code></pre>
+			<h2>Contributors</h2>
+			<hr/>
+			<div class="contributors">
+			</div>
 		</section>
 
 		<section>
-			<h2>
-				<h3 class="title">Spread the word and love about it</h3>
+			<h3>Join us at DrupalCon Sprints</h3>
+			<p>
 				<br/>
-				<h3 class="title">@drupalconsole</h3>
-				<h3 class="title">#drupalconsole</h3>
-			</h2>
+				<img src="assets/images/stickers.jpg" class="no-border">
+				<br/>
+			</p>
+			<p>We will be exchanging commits for stickers.</p>
 		</section>
+
+
 	</section>
 
 	<section>
 		<h2>Roadmap</h2>
-	</section>
-
-	<section>
-		<h2>One more thing...</h2>
-	</section>
-
-	<section>
-		<h2>Contributors</h2>
-		<hr/>
-		<div class="contributors">
-		</div>
+		<br/>
+		<ul class="bullets">
+			<li>Keep in sync with Drupal releases Beta, RC, etc.</li>
+			<li>Improve translations.</li>
+			<li>Update documentation.</li>
+			<li>Detect, review and fix issues.</li>
+			<li>Merge Pull Requests.</li>
+			<li>Verbose code-output for learning.</li>
+		</ul>
 	</section>
 
 	<section>
@@ -674,9 +757,9 @@ $ box build
 		<br/>
 		<h3>@dmouse @jmolivas @drupalconsole</h3>
 		<br/>	
-		<h3 class="title">Also feel free to join us at:</h3>
+		<h3 class="title">Presentation slides:</h3>
 		<p>
-		<a href="https://gitter.im/hechoendrupal/DrupalAppConsole">https://gitter.im/hechoendrupal/DrupalAppConsole</a>
+			<a href="http://bit.ly/console-bogota">http://bit.ly/console-bogota</a>
 		</p>
 	</section>
 
@@ -706,8 +789,9 @@ $ box build
 			var contributors = [
 				'albertvolkman', 'alexweber', 'azarzag', 'bojanz', 'brantwynn', 
 				'cordoval', 'crell', 'danielnv18', 'dmouse', 'egulias', 'enzolutions',
-				'esod', 'flocondetoile', 'jjcarrion', 'jmolivas', 'joshuataylor',
-				'martinfrances107', 'mimioc', 'mmenavas', 'omero', 'rpayanm', 'vacho'
+				'esod', 'itsekhmistro', 'flocondetoile', 'jjcarrion', 'jmolivas', 
+				'joshuataylor', 'martinfrances107', 'mimioc', 'mmenavas', 'omero', 
+				'rpayanm', 'vacho'
 			];
 
 			$.each(contributors, function( index, value ) {
@@ -715,7 +799,6 @@ $ box build
   					'<img src="assets/images/contributors/'+value+'.jpg">' +
   					'<div class="username">' + value + '</div></div>');
 			});
-
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
