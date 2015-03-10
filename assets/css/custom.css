@@ -155,15 +155,15 @@ img.avatar {
 }
 
 .reveal div.contributors .contributor img {
-	max-width: 110px;
-	max-height: 110px;
+	max-width: 96px;
+	max-height: 96px;
 	border: 1px solid;
 	margin: 0px;
 	padding: 0px;
 }
 
 .reveal div.contributors .contributor .username {
-	font-size: 40%;
+	font-size: 35%;
 	line-height: 1em;
 	margin-bottom: 15px;
 }
