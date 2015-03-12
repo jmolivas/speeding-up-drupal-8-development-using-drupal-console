@@ -16,7 +16,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,
 		maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
 
 		<!-- For syntax highlighting -->
@@ -42,7 +42,7 @@
 			<div class="slides">
 
 				<section>
-					<h1 class="medium">Speeding up Drupal 8 development using <br/>
+					<h1 class="big">Speeding up Drupal 8 development using <br/>
 					Drupal Console</h1>
 					<p>
 						<br/>
@@ -54,28 +54,30 @@
 					<h2>About me</h2>
 					<hr>
 					<div class="half">
-						<br/>
 						<img src="assets/images/jmolivas.jpg">
+						<br/>
+						<img src="assets/images/blinkreaction-logo.png" class="no-border">
 					</div>
 					<div class="half text-left">
-						<p>
-							<h3 class="name">Jesus Manuel Olivas</h3>
-							<h3 class="name">Drupal 8 Solutions Engineer</h3>
-						</p>
+						<h3 class="name">Jesus Manuel Olivas</h3>
+						<h3 class="name">Drupal 8 Solutions Engineer</h3>
+						<h3 class="name">BlinkReaction</h3>
 						<hr/>
-						<p class="text-small">
-							BlinkReaction
-						</p>
 						<div class="text-small">
 							<p>
 							<a href="http://jmolivas.com" target="_blank">http://jmolivas.com</a>
+							</p>
+							<p>
 							<a href="https://github.com/jmolivas" target="_blank">https://github.com/jmolivas</a>
+							</p>
+							<p>
 							<a href="https://github.com/hechoendrupal">https://github.com/hechoendrupal</a>
 							</p>
 						</div>
 						<div  class="text-small">
-							<p>Reach me at: <br/>
-							<a href="http://twitter.com/jmolivas" target="_blank">@jmolivas</a> |
+							<p>Reach me at:</p>
+							<p>
+							<a href="http://twitter.com/jmolivas" target="_blank">@jmolivas</a> | 
 							<a href="http://twitter.com/drupodcast" target="_blank">@drupodcast</a>
 							</p>
 						</div>
@@ -84,7 +86,7 @@
 
 				<section>
 					<section>
-						<h2>What is the Drupal Console?</h2>
+						<h1 class="medium">What is the Drupal Console?</h1>
 						<hr/>
 					</section>
 
@@ -215,7 +217,7 @@
 						</aside>
 					</section>
 					<section>
-						<h3>A lot of code to write</h3>
+						<h2>A lot of code to write</h2>
 						<img class="no-border" src="assets/images/generate-controller.png">
 						<aside class="notes">
 						<p>
@@ -230,7 +232,7 @@
 					</section>
 
 					<section>
-						<h3>A lot of directories & files</h3>
+						<h2>A lot of directories & files</h2>
 						<img class="no-border" src="assets/images/generate-entity-content.png">
 						<aside class="notes">
 						<p>Creating a entity content:</p>
@@ -244,7 +246,7 @@
 
 				<section>
 					<section>
-						<h2>How does it help?</h2>
+						<h1 class="medium">How does it help?</h1>
 						<hr/>
 					</section>
 
@@ -382,9 +384,9 @@
 		<section>
 			<h2>Using the Installer</h2>
 <p>
-Install the Console locally by running the installer in your project directory:
+Install the Console locally by running the installer <br/> in your project directory:
 </p>
-
+<br/>
 <pre><code class="bash">
 $ curl -LSs http://drupalconsole.com/installer | php
 
@@ -433,13 +435,16 @@ $ php console.phar
 </code></pre>
 		</section>
 
-		<section>
+		<!-- <section>
 			<h3>Using the installer</h3>
 			<video preload="none" controls width="720" height="530">
 				<track label="Using the installer"/>
 				<source src="assets/video/installer.mp4" type="video/mp4">
 			</video>
-		</section>
+		</section> -->
+
+		 <section data-background-video="assets/video/installer.mp4">
+		 </section>
 
 		<section>
 			<h2>Updating the project</h2>
@@ -466,7 +471,7 @@ $ php console.phar self-update
 	</section>
 	<section>
 		<section>
-			<h2>Available Commands</h2>
+			<h1>Available Commands</h1>
 		</section>
 
 		<section>
@@ -759,18 +764,18 @@ $ composer update --no-dev
 			</div>
 		</div>
 
-    <footer>
+<!--     <footer>
    		<div class="align-left">
    			  <img src="assets/images/blinkreaction-logo.png" class="no-border">
    		</div>
    		<div class="align-right">
    			  <h3>SANDCamp 2015</h3>
    		</div>
-    </footer>
+    </footer> -->
 
 
 		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+		<script src="js/reveal.js"></script>
 
 		<script type="text/javascript" src="lib/js/jquery.min.js"></script>	
 
@@ -792,11 +797,11 @@ $ composer update --no-dev
   					'<div class="username">' + value + '</div></div>');
 			});
 
-			$('video').on('playing',function(){
-				$('h3', $(this).parent() ).hide();
-				$(this).attr('width','840');
-				$(this).attr('height','617');
-			}); 
+			// $('video').on('playing',function(){
+			// 	$('h3', $(this).parent() ).hide();
+			// 	$(this).attr('width','840');
+			// 	$(this).attr('height','617');
+			// }); 
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
@@ -807,7 +812,7 @@ $ composer update --no-dev
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || 'slide', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [

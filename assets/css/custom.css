@@ -1,3 +1,10 @@
+.reveal h2 {
+	font-size: 1.5em;
+}
+/*
+.reveal h2 {
+	font-size: 1.25em;
+}*/
 
 div.half {
 	display:block;
@@ -10,6 +17,16 @@ div.half {
 .break {
 	clear: both;
 	float: none;
+}
+
+.reveal p {
+	padding: 5px;
+}
+
+.reveal pre code {
+	text-align: left;
+	font-size: .75em;
+	font-family: monospace,sans-serif;
 }
 
 div.text-left, ul.text-left, li.text-left, p.text-left {
@@ -37,14 +54,20 @@ div.text-bigger, code.text-bigger, ul.text-bigger, pre code.text-bigger {
 	line-height: 100%;
 }
 
-h1.medium {
+h1.big {
 	text-transform: none;
 	font-size: 2.5em;
 }
 
-h1.small {
+
+h1.medium {
 	text-transform: none;
 	font-size: 2em;
+}
+
+h1.small {
+	text-transform: none;
+	font-size: 1.5em;
 }
 
 .reveal h1, .reveal h2 {
@@ -98,6 +121,7 @@ ul li {
 ul.bullets li {
 	line-height: 125%;
 	padding-bottom: .75em;
+	list-style: none;
 }
 
 .reveal h5 {
@@ -128,7 +152,7 @@ div.align-right {
 }
 
 .reveal h3.name {
-  padding-top: 15px;
+  padding-top: 10`px;
   font-size: 1em;
   font-weight: bold;
 }
