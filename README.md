@@ -1,3 +1,3 @@
 # Speeding up Drupal 8 development using Drupal Console
 
-DrupalCon Bogotá 2015
+DrupalCon Los Angeles 2015

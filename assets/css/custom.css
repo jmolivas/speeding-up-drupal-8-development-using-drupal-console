@@ -1,10 +1,6 @@
 .reveal h2 {
 	font-size: 1.5em;
 }
-/*
-.reveal h2 {
-	font-size: 1.25em;
-}*/
 
 div.half {
 	display:block;
@@ -25,7 +21,8 @@ div.half {
 
 .reveal pre code {
 	text-align: left;
-	font-size: .75em;
+	font-size: .65em;
+	line-height: 115%;
 	font-family: monospace,sans-serif;
 }
 
@@ -39,7 +36,7 @@ div.text-medium, code.text-medium, ul.text-medium, pre code.text-medium, p.text-
 }
 
 div.text-small, code.text-small, ul.text-small, pre code.text-small, p.text-small {
-	font-size: 90%;
+	font-size: 80%;
 }
 span.text-small {
     font-size: 60%;
@@ -105,9 +102,7 @@ footer {
 	text-shadow: none;
 	font-size: 1.5em;
 }
-/*footer img {
-    width: 300px;
-}*/
+
 footer .stuck {
     float: left;
     margin-left: 20px;
@@ -118,10 +113,14 @@ ul li {
 	margin-bottom: 50px;
 }
 
+ul li {
+	list-style-type: none; 
+}
+
 ul.bullets li {
 	line-height: 125%;
 	padding-bottom: .75em;
-	list-style: none;
+	font-size: 1.25em;
 }
 
 .reveal h5 {
@@ -163,7 +162,8 @@ img.avatar {
 }
 
 .reveal h3.title {
-	line-height: 115%;
+	font-size: 140%;
+	line-height: 125%;
 }
 .reveal div.contributors {
 	width: 960px;
@@ -171,8 +171,7 @@ img.avatar {
 }
 
 .reveal div.contributors .contributor {
-	/*max-width: 280px;
-	max-height: 135px;*/
+
 	float: left;
 	padding: 3px;
 	padding-bottom: 5px;
@@ -190,4 +189,20 @@ img.avatar {
 	font-size: 35%;
 	line-height: 1em;
 	margin-bottom: 15px;
+}
+
+#notes {
+	width: auto;
+}
+
+.reveal .how-maintain {
+	margin-bottom: 20px;
+}
+
+.reveal .how-maintain img {
+	width: 45%;
+	height: 45%;
+}
+.reveal .how-maintain p {
+	font-size: 75%;
 }
