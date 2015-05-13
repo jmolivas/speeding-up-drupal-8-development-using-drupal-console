@@ -52,9 +52,9 @@
 					</p>
 					<aside class="notes">
 						<p>Hola que tal a todos, gracias por estar aquí.</p>
-						<p>What really, you don't understand Spanish, come on ... almost half of the Los Angeles population speak Spanish. Fine lets try English then.</p>
+						<p>What really, you don't understand Spanish, come on ... almost half of the Los Angeles population speak Spanish. OK lets try English then.</p>
 						<p>
-						Hello, everyone welcome and thanks for coming, we are here to talk about the Drupal Console a new Drupal CLI tool based on the Symfony Console component for Drupal 8.
+						Hello, everyone welcome and thanks for coming, we are here to talk about the Drupal Console a Drupal CLI tool for Drupal 8.
 						</p>
 					</aside>
 				</section>
@@ -68,7 +68,7 @@
 						<div>
 							<h3 class="name">Jesus Manuel Olivas</h3>
 							<h3 class="name">Drupal 8 Solutions Engineer</h3>
-							<h3 class="name">at <a href="http://www.blinkreaction.com/">Blink Reaction</a></h3>
+							<h3 class="name">at <a href="http://ffw.co/">FFW</a></h3>
 						</div>
 						<div  class="text-small">
 							<a target="_blank"  href="http://twitter.com/jmolivas" target="_blank">@jmolivas</a>
@@ -88,7 +88,7 @@
 					</div>
 					<aside class="notes">
 						<h3>@jmolivas & @enzo</h3>
-						How about talk about us a little, please Eduardo.
+						First, a little introduction about us, please Eduardo.
 						<p>
 							I am Enzo ....
 						</p>
@@ -119,6 +119,7 @@
 								<li>Drupal Console is not a Drupal Module.</li>
 								<li>Drupal Console is a Symfony Application.</li>
 							</ul>
+							<p>That take advantage of Symfony Console Component and other third party libraries.</p>
 						</aside>
 					</section>
 
@@ -190,7 +191,7 @@
 							<h3>jmolivas</h3>
 							<p>I want to thank the agencies sponsoring this project.</p>
 							<ul>
-								<li>Blink Reaction the biggest drupal agency on the world. Is sponsoring me to work full time contributing.</li>
+								<li>FFW (formerly Blink Reaction and Propeople) the biggest drupal agency on the world. Is sponsoring me to work full time in this project.</li>
 								<li>Indava a Web developer agency in Mexico is sponsoring David's contributions.</li>
 								<li>AnexusIT the oldest and biggest DrupalShop in Costa Rica is sponsoring enzo's contributions.</li>
 								<li>The only one living in the wild is Omar Aguirre, please feel free to invite him a beer or two.</li>
@@ -202,10 +203,12 @@
 				<section>
 					<section>
 						<h1 class="medium">Why should you care about it?</h1>
+						<h1>
+						<img class="no-border" src="assets/images/drupal-8-changes.png">
 						<aside class="notes">
 							<h3>enzo</h3>
 							<p>
-								Drupal is a bit more complex than other Content Management Systems. 
+								Drupal is more complex than other Content Management Systems. 
 							</p>
 							<p>
 								How many of you, have begun to explore Drupal 8 already?, If you are not yet, I can tell you there is a whole new set of concepts to learn.
@@ -216,26 +219,10 @@
 						</aside>
 					</section>
 
-					<section>
-						<h2>A lot of new concepts</h2>
-						<hr/>
-						<img class="no-border" src="assets/images/drupal-8-changes.png">
-						<aside class="notes">
-							<h3>enzo</h3>
-							<p>
-								Drupal 8 is more technically advanced compared to its predecessors, writing a module involves a lot of boilerplate code.
-							</p>
-							<p>
-								There is also a lot of things you need to know and do, just to get started building a new module, all these tasks can be repetitive and tedious, and this create opportunities for errors.
-							</p>
-							<p>
-								Fortunately, a lot of that code and files can be generated automatically using the Drupal Console project.
-							</p>
-							<p>
-
-							</p>
-						</aside>
+					<section data-background="#DDD">
+						<h1 class="big">getBestNextExperience()</h1>
 					</section>
+
 				</section>
 
 				<section>
@@ -340,10 +327,10 @@ $ drupal
 		<aside class="notes">
 			<h3>jmolivas</h3>
 			<p>
-				My opinionated recomendation for getting the project on your local machine is by using the installer.
+				There are differet ways to get the project on your local machine.
 			</p>
 			<p>
-				I will show you how on the next video.
+				Our recomendation for getting the project on your local machine is by using the installer.
 			</p>
 		</aside>
 		</section>
@@ -351,7 +338,7 @@ $ drupal
 		 <section data-background-video="assets/video/installer.mp4">
 		 	<aside class="notes">
 		 		<h3>jmolivas</h3>
-		 		Using the installer
+		 		As you can see on the video the installer download the necesary files to run drupal console on you computer.
 		 	</aside>
 		 </section>
 
@@ -372,10 +359,7 @@ $ php console.phar self-update
 		<aside class="notes">
 			<h3>jmolivas</h3>
 			<p>
-				As you know Drupal 8 is in constant development, to keep in sync with the latest changes.
-			</p>
-			<p>
-				The easiest and recommended way of updating Console is using the self-update command.
+				As you know Drupal 8 is under heavy development, to keep in sync with the latest changes. The easiest and recommended way of updating Console is using the self-update command.
 			</p>
 		</aside>
 		</section>
@@ -406,12 +390,28 @@ $ php console.phar self-update
 			<hr>
 			<aside class="notes">
 				<h3>enzo</h3>
+				<aside class="node">
+					<p>
+					As you can see, the video is using the interactive mode where the user can provide the basic information (like module, name, ...) to generate a custom Drupal 8 moddule.
+					</p>
+					<p>
+						As result we get a brand new module and fully funcional module. Ready to be used on you Drupal 8 installation.
+					</p>
+				</aside>
 			</aside>
 		</section>
 
 		<section data-background-video="assets/video/generate-module.mp4">
 			<aside class="notes">
 				<h3>enzo</h3>
+				<aside class="notes">
+					<p>
+						Lets tal about form generation.
+					</p>
+					<p>
+						What do you need to generate a Form in Drupal 8.
+					</p>
+				</aside>
 			</aside>
 		</section>
 
@@ -827,7 +827,7 @@ $ composer update --no-dev
 			<aside class="notes">
 				<h3>jmolivas</h3>
 				<p>
-					Before we wrap up, I like to talk about an upcoming feature.
+					Before we wrap up, I like to talk about a planned feature.
 				</p>
 			</aside>
 		</section>
@@ -840,7 +840,7 @@ $ composer update --no-dev
 					As mentioned before the goal of this project is provide a tool easy to use for everyone.
 				</p>
 				<p>
-					Guess what, yes we are plannig a GUI for the CLI.
+					We are plannig a GUI for the CLI.
 				</p>
 			</aside>
 		</section>
