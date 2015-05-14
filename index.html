@@ -51,8 +51,8 @@
 						<a target="_blank"  href="http://bit.ly/console-dcla2015">http://bit.ly/console-dcla2015</a>
 					</p>
 					<aside class="notes">
-						<p>Hola que tal a todos, gracias por estar aquí.</p>
-						<p>What really, you don't understand Spanish, come on ... almost half of the Los Angeles population speak Spanish. OK lets try English then.</p>
+						<p>Hola que tal a todos, gracias por estar asistir, estamos aqui para platicar sobre Drupal Console, una herramienta para Drupal ocho que se ejecuta en la terminal .... </p>
+						<p>What really, people here don't understand Spanish, but almost half of Los Angeles population speak Spanish. OK lets try English then.</p>
 						<p>
 						Hello, everyone welcome and thanks for coming, we are here to talk about the Drupal Console a Drupal CLI tool for Drupal 8.
 						</p>
@@ -170,8 +170,8 @@
 						<br/>
 						<p>
 							<p>
-							<a target="_blank"  href="http://www.blinkreaction.com/">
-								<img src="assets/images/blinkreaction-logo.png" class="no-border">
+							<a target="_blank"  href="http://www.ffw.co">
+								<img src="assets/images/ffw-logo.png" class="no-border" >
 							</a>
 							</p>
 						</p>
@@ -335,7 +335,7 @@ $ drupal
 		</aside>
 		</section>
 
-		 <section data-background-video="assets/video/installer.mp4">
+		 <section data-background-video="assets/video/install-init.mp4">
 		 	<aside class="notes">
 		 		<h3>jmolivas</h3>
 		 		As you can see on the video the installer download the necesary files to run drupal console on you computer.
@@ -359,7 +359,7 @@ $ php console.phar self-update
 		<aside class="notes">
 			<h3>jmolivas</h3>
 			<p>
-				As you know Drupal 8 is under heavy development, to keep in sync with the latest changes. The easiest and recommended way of updating Console is using the self-update command.
+				Drupal 8 is under heavy development, to keep in sync with the latest changes. The easiest and recommended way of updating Console is using the self-update command.
 			</p>
 		</aside>
 		</section>
@@ -405,12 +405,6 @@ $ php console.phar self-update
 			<aside class="notes">
 				<h3>enzo</h3>
 				<aside class="notes">
-					<p>
-						Lets tal about form generation.
-					</p>
-					<p>
-						What do you need to generate a Form in Drupal 8.
-					</p>
 				</aside>
 			</aside>
 		</section>
@@ -426,6 +420,18 @@ $ php console.phar self-update
 		<section data-background-video="assets/video/generate-form-config.mp4">
 			<aside class="notes">
 				<h3>enzo</h3>
+				<aside class="notes">
+					<p>
+						Lets tal about form generation.
+					</p>
+					<p>
+						What do you need to generate a Form in Drupal 8.
+						You need a route, a form and field definition and integration with the configuration managemente in order to save user input.
+					</p>
+					<p>
+						At the end we get a funcional form. User can enter data and that will be save on the system.
+					</p>
+				</aside>
 			</aside>
 		</section>
 
@@ -435,7 +441,7 @@ $ php console.phar self-update
 <div>
 <pre><code class="bash text-big">
 $ drupal generate:plugin:block
-  --module="example"
+  --module="drupalcon"
   --class-name="ExampleBlock"
   --label="example_block"
   --plugin-id="example_block"
@@ -454,6 +460,12 @@ $ drupal generate:plugin:block
 		<section data-background-video="assets/video/generate-plugin-block.mp4">
 			<aside class="notes">
 				<h3>jmolivas</h3>
+				<p>
+					Blocks in Drupal 8 are plugins, creating a plugin can be a little tricky, bex`cause you need to add annotations in order to this new block can be discoverable by the system.
+				</p>
+				<p>
+					But do not worry, beacuse console take care of adding them.
+				</p>
 			</aside>
 		</section>
 
@@ -463,7 +475,7 @@ $ drupal generate:plugin:block
 <div>
 <pre><code class="bash text-big">
 $ drupal generate:entity:content
-  --module="example"
+  --module="drupalcon"
   --entity-class="Foo"
   --entity-name="foo"
   --no-interaction
@@ -478,6 +490,13 @@ $ drupal generate:entity:content
 		<section data-background-video="assets/video/generate-entity-content.mp4">
 			<aside class="notes">
 				<h3>jmolivas</h3>
+				<p>Adding an entity on Drupal 8 is a complex task. You need to create/update about 14 files.</p>
+				<p>
+					Those files are classes, forms, routes and menu links. The provided entity is fieldable from de UI.
+				</p>
+				<p>
+					Entities are plugins and require to add annotations same as in the block generation that code is added by the command.
+				</p>
 			</aside>
 		</section>
 	</section>
@@ -489,7 +508,7 @@ $ drupal generate:entity:content
 			<aside class="notes">
 				<h3>enzo</h3>
 				<p>
-					We started the project as scaffolding code generator.
+					We started the project as a scaffolding code generator.
 				</p>
 				<p>
 					But eventually we have needed to test the generated code.
@@ -500,31 +519,14 @@ $ drupal generate:entity:content
 			</aside>
 		</section>
 
-		<section>
-			<h2>config:*</h2>
-			<hr>
+		<section data-background-video="assets/video/interact.mp4">
 			<aside class="notes">
 				<h3>enzo</h3>
-			</aside>
-		</section>
-
-		<section data-background-video="assets/video/config.mp4">
-			<aside class="notes">
-				<h3>enzo</h3>
-			</aside>
-		</section>
-
-		<section>
-			<h2>*:debug</h2>
-			<hr>
-			<aside class="notes">
-				<h3>enzo</h3>
-			</aside>
-		</section>
-
-		<section data-background-video="assets/video/debug.mp4">
-			<aside class="notes">
-				<h3>enzo</h3>
+				<ul>
+					<li>As you can see we have commands to interact with the configurations system you can list, edit, import and export configurations.</li>
+					<li>You can also debug the routing system, listing routes and displaying a specific route information.</li>
+					<li>Also you can download, list, install, unistall modules and check the status of them.</li>
+				</ul>
 			</aside>
 		</section>
 	</section>
@@ -536,7 +538,7 @@ $ drupal generate:entity:content
 
 <pre><code class="bash text-big">
 $ drupal generate:controller
-  --module="example"
+  --module="drupalcon"
   --class-name="HelloController"
   --method-name="hello"
   --route="/hello/{name}"
@@ -546,14 +548,14 @@ $ drupal generate:controller
 </code></pre>
 			<aside class="notes">
 				<h3>jmolivas</h3>
+				<ul>
+					<li>I can imagine some of you, are thinking in use the generated code to learn Drupal 8 by applying Reverse Engineering.</li>
+				</ul>
 				<p>
-					You can learn Drupal 8 while Generating code using --learning option.
+					However, this approach coud not be enough.
 				</p>
 				<p>
-					This option will not only generate code, will also add comments describing the generated code.
-				</p>
-				<p>
-					Think about the commented code at examples module.
+					For that reason we provide you with an option to provide extra information to the generated code.
 				</p>
 			</aside>
 
@@ -562,6 +564,12 @@ $ drupal generate:controller
 		<section data-background-video="assets/video/learning.mp4">
 			<aside class="notes">
 				<h3>jmolivas</h3>
+				<p>
+					Using the --learnig the generator will not only generate code, will also add comments describing the generated code.
+				</p>
+				<p>
+					Think about the commented code at examples module.
+				</p>
 			</aside>
 		</section>
 	</section>
@@ -570,21 +578,15 @@ $ drupal generate:controller
 		<section>
 			<h1 class="medium">Automate command execution</h1>
 <pre><code class="bash text-big">
-# copy chain file to home directory
-$ drupal init
-
-# execute chain command
 $ drupal chain
-  --file=~/chain/sample.yml
+  --file=~/path/to/start-project.yml
 
 </code></pre>
 			<aside class="notes">
 				<h3>jmolivas</h3>
 				<ul>
-					<li>If you are looking to automate command execution you can use the chain command.</li>
-					<li>This command could read a configuration file and execute several commands based on the sequence defined in the configuration file.
-					</li>
-					<li>We decide to use a standard YAML file extension and not go with something like chain extension because we did not want to add a new Drupalism to the project.</li>
+					<li>We have mentioned how to run individual commands.</li>
+					<li>But if you are looking to automate command execution you can use the chain command.</li>
 				</ul>
 			</aside>
 		</section>
@@ -593,7 +595,9 @@ $ drupal chain
 			<aside class="notes">
 				<h3>jmolivas</h3>
 				<ul>
-					<li>You can create your own chain command and define the common Drupal 8 features you use while writing a Drupal 8 module and execute one command to have those features generated.</li>
+					<li>The chain command reads a configuration file and execute several commands based on the sequence defined in the configuration file.
+					</li>
+					<li>We decide to use a standard YAML file extension and not go with something like chain extension because we did not want to add a new Drupalism to the project.</li>
 				</ul>
 			</aside>
 		</section>
@@ -616,7 +620,7 @@ $ drupal chain
 
 <pre><code class="bash text-big">
 $ drupal generate:command
-  --module="example"
+  --module="drupalcon"
   --class-name="HelloCommand"
   --command="example:hello"
   --no-interaction
@@ -627,6 +631,12 @@ $ drupal generate:command
 				<p>
 					The easy way to generate an integration is to execute the generate:command command.
 				</p>
+			</aside>
+		</section>
+
+		<section data-background-video="assets/video/generate-command.mp4">
+			<aside class="notes">
+				<h3>enzo</h3>
 				<p>
 					This command will generate all the boiler-plate code to write a new command within your drupal 8 module.
 				</p>
@@ -636,26 +646,36 @@ $ drupal generate:command
 			</aside>
 		</section>
 
-		<section data-background-video="assets/video/generate-command.mp4">
-			<aside class="notes">
-				<h3>enzo</h3>
-			</aside>
-		</section>
-
 		<section>
 			<h2>webprofiler</h2>
 			<hr>
+			<br/><br/>
 			<p>
+				<img src="assets/images/webprofiler.png" class="no-border">
+			<br/><br/>
 				<a target="_blank" href="https://www.drupal.org/project/webprofiler">
 					<h3 class="title">https://www.drupal.org/project/webprofiler</h3>
 				</a>
 			</p>
+
 			<aside class="notes">
 				<h3>enzo</h3>
+				<p>
+					Let me tell you about the awesome webprofiler project. Which is an implementation of Symfony WebProfiler.
+				</p>
+				<p>
+					This module was the first module to take advantage of Drupal Console features.
+				</p>
 			</aside>
 		</section>
 
 		<section data-background-video="assets/video/module-webprofiler.mp4">
+			<aside class="notes">
+				<h3>enzo</h3>
+				<p>
+					As you can see this integration enables users, to run benchmarks agains a Drupal installation.
+				</p>
+			</aside>
 		</section>
 	</section>
 
@@ -665,7 +685,7 @@ $ drupal generate:command
 			<aside class="notes">
 				<h3>jmolivas</h3>
 				<p>
-					Now that enzo mentioned about integration and contribution, I like to add.
+					Now that enzo mentioned about integration, I like to talk about contribution.
 				</p>
 				<p>
 					Anyone can contribute, you can add new features, write an integration with your custom module, improve transaltions and documentation.
@@ -765,11 +785,8 @@ $ composer update --no-dev
 						<li>Providing feedback.</li>
 						<li>Asking for new features.</li>
 						<li>Creating issues and sending pull requests.</li>
-						<li>Talking and Tweeting about this project.</li>
+						<li>Talking and Tweeting about this project and Proudly showing your Drupal Console sticker. Ping us for stickers at the end.</li>
 					</ul>
-					<strong>
-						Poudly showing your Drupal Console sticker. Ping us for stickers after session ends.
-					</strong>
 				</aside>
 		</section>
 
