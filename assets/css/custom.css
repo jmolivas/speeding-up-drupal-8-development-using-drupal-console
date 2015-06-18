@@ -173,13 +173,13 @@ img.avatar {
 .reveal div.contributors .contributor {
 
 	float: left;
-	padding: 3px;
-	padding-bottom: 5px;
+	padding: 2px;
+	/*padding-bottom: 5px;*/
 }
 
 .reveal div.contributors .contributor img {
-	max-width: 96px;
-	max-height: 96px;
+	max-width: 88px;
+	max-height: 88px;
 	border: 1px solid;
 	margin: 0px;
 	padding: 0px;
@@ -188,7 +188,7 @@ img.avatar {
 .reveal div.contributors .contributor .username {
 	font-size: 35%;
 	line-height: 1em;
-	margin-bottom: 15px;
+	/*margin-bottom: 15px;*/
 }
 
 #notes {
