@@ -24,6 +24,8 @@ div.half {
 	font-size: .65em;
 	line-height: 115%;
 	font-family: monospace,sans-serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 div.text-left, ul.text-left, li.text-left, p.text-left {
@@ -84,7 +86,17 @@ h2.medium {
 }
 
 .reveal blockquote {
-	background-color: #dedede;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 0.5em 5px;
+  padding: 0.5em 5px;
+  font-style: italic;
+  font-family: Georgia, serif;
+  line-height: 125%;
+}
+
+.reveal blockquote p {
+  display: inline;
 }
 
 footer {
@@ -205,6 +217,23 @@ img.avatar {
 }
 .reveal .how-maintain p {
 	font-size: 75%;
+}
+.reveal .white, .reveal a.white  {
+	color: #FFF;
+}
+
+.reveal .white-back, .reveal a.white-back  {
+	background-color: #FFF;
+}
+
+.reveal table, .reveal table td, .reveal table  {
+	border: 2px;
+	border-color: #000;
+	padding: 5px;
+	margin: 5px;
+}
+.reveal .underlined {
+	background: url(../images/underline.gif) repeat-x 100% 100%;
 }
 /*
 .reveal .slide-background .present {
