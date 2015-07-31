@@ -47,19 +47,25 @@
 					Drupal Console</h1>
 					<img src="assets/images/drupal-console.png" class="no-border">
 					<p>
-						DrupalCamp Sao Paulo 2015
+						DrupalCamp Costa Rica 2015
 					</p>
 					<aside class="notes">
+						<h3>@enzo</h3>
 						<p>Hola que tal a todos, gracias por estar asistir, estamos aqui para platicar sobre Drupal Console, una herramienta para Drupal ocho que se ejecuta en la terminal .... </p>
-						<p>What really, people here don't understand Spanish, but almost half of Los Angeles population speak Spanish. OK lets try English then.</p>
 						<p>
-						Hello, everyone welcome and thanks for coming, we are here to talk about the Drupal Console a Drupal CLI tool for Drupal 8.
+							Este proyecto surgio hace 2 DrupalCamps ...
 						</p>
 					</aside>
 				</section>
 
 				<section>
-					<h2>About me</h2>
+					<h2>The begining</h2>
+					<hr/>
+					<img src="assets/images/drupalconsole_begining.jpg" class="no-border">
+				</section>
+
+				<!-- <section>
+					<h2>About us</h2>
 					<hr>
 					<div class="half">
 						<img src="assets/images/jmolivas.jpg" >
@@ -91,7 +97,7 @@
 						<p>My names is ....</p>
 						<p>I work for FFW (Formely knonw as Blink reaction & Propeople</p>
 					</aside>
-				</section>
+				</section>-->
 
 				<section>
 					<section>
@@ -206,7 +212,7 @@
 						<hr/>
 						<img class="no-border" src="assets/images/drupal-8-changes.png">
 						<aside class="notes">
-							<h3>enzo</h3>
+							<h3>@omers</h3>
 							<p>
 								Drupal is more complex than other Content Management Systems. 
 							</p>
@@ -229,6 +235,9 @@
 						<h3 class="title">
 							Drupal Console help you developing <span class="underlined">faster</span> and <span class="underlined">smarter</span> with Drupal 8.
 						</h3>
+						<aside class="notes">
+							@jmolivas
+						</aside>
 					</section>
 
 					<section>
@@ -284,7 +293,6 @@
 			<br/>
 			<p>
 				<h3 class="title">Documentation</h3>
-				<h3 class="title">Documentation</h3>
 				<a href="http://bit.ly/console-book">
 					http://bit.ly/console-book
 				</a>
@@ -300,7 +308,7 @@
 				</h3>
 			</p>
 			<aside class="notes">
-				<h3>enzo</h3>
+				<h3>omers</h3>
 				<p>
 					Just by visiting the project landing page.
 				</p>
@@ -395,7 +403,7 @@ $ php console.phar self-update
 			<h1 class="medium white">What can you do with</h1>
 			<h1 class="medium white">Drupal Console?</h1>
 			<aside class="notes">
-				<h3>enzo</h3>
+				<h3>omers</h3>
 				Lets see some commands in action.
 			</aside>
 		</section>
@@ -404,7 +412,7 @@ $ php console.phar self-update
 			<h1 class="medium white">Generate the code and files</h1>
 			<h1 class="medium white">required by a Drupal 8 module.</h1>
 			<aside class="notes">
-				<h3>enzo</h3>
+				<h3>omers</h3>
 			</aside>
 		</section>
 
@@ -412,7 +420,7 @@ $ php console.phar self-update
 			<h2>generate:module</h2>
 			<hr>
 			<aside class="notes">
-				<h3>enzo</h3>
+				<h3>omers</h3>
 				<aside class="node">
 					<p>
 					As you can see, the video is using the interactive mode where the user can provide the basic information (like module, name, ...) to generate a custom Drupal 8 moddule.
@@ -473,7 +481,7 @@ $ drupal generate:plugin:block
 </code></pre>
 </div>
 			<aside class="notes">
-				<h3>jmolivas</h3>
+				<h3>enzo</h3>
 				<p>So far we have seen the interactive mode, which it is a little bit more flashy since you can see the questions and the entered answer.</p>
 
 				<p>But, starting from now we will show how to execute commands passing inline arguments, which is way more faster.</p>
@@ -482,7 +490,7 @@ $ drupal generate:plugin:block
 
 		<section data-background-video="assets/video/generate-plugin-block.mp4">
 			<aside class="notes">
-				<h3>jmolivas</h3>
+				<h3>enzo</h3>
 				<p>
 					Blocks in Drupal 8 are plugins, creating a plugin can be a little tricky, because you need to add annotations in order to this new block can be discoverable by the system.
 				</p>
@@ -529,7 +537,7 @@ $ drupal generate:entity:content
 			<h1 class="medium white">Interact with your Drupal</h1>
 			<h1 class="medium white">installation.</h1>
 			<aside class="notes">
-				<h3>enzo</h3>
+				<h3>omers</h3>
 				<p>
 					We started the project as a scaffolding code generator.
 				</p>
@@ -544,7 +552,7 @@ $ drupal generate:entity:content
 
 		<section data-background-video="assets/video/interact.mp4">
 			<aside class="notes">
-				<h3>enzo</h3>
+				<h3>omers</h3>
 				<ul>
 					<li>As you can see we have commands to interact with the configurations system you can list, edit, import and export configurations.</li>
 					<li>You can also debug the routing system, listing routes and displaying a specific route information.</li>
@@ -598,39 +606,10 @@ $ drupal generate:controller
 	</section>
 
 	<section>
-		<section>
-			<h1 class="medium">Automate command execution</h1>
-<pre><code class="bash text-big">
-$ drupal chain
-  --file=~/path/to/start-project.yml
-
-</code></pre>
-			<aside class="notes">
-				<h3>jmolivas</h3>
-				<ul>
-					<li>We have mentioned how to run individual commands.</li>
-					<li>But if you are looking to automate command execution you can use the chain command.</li>
-				</ul>
-			</aside>
-		</section>
-
-		<section data-background-video="assets/video/chain.mp4">
-			<aside class="notes">
-				<h3>jmolivas</h3>
-				<ul>
-					<li>The chain command reads a configuration file and execute several commands based on the sequence defined in the configuration file.
-					</li>
-					<li>We decide to use a standard YAML file extension and not go with something like chain extension because we did not want to add a new Drupalism to the project.</li>
-				</ul>
-			</aside>
-		</section>
-	</section>
-
-	<section>
 		<section data-background="#000">
 			<h1 class="medium white">Write an integration</h1>
 			<aside class="notes">
-				<h3>enzo</h3>
+				<h3>jmolivas</h3>
 				<p>
 					If you are a module maintainer. You can write an integration to take advantage of drupal console features.
 				</p>
@@ -650,7 +629,7 @@ $ drupal generate:command
 
 </code></pre>
 			<aside class="notes">
-				<h3>enzo</h3>
+				<h3>jmolivas</h3>
 				<p>
 					The easy way to generate an integration is to execute the generate:command command.
 				</p>
@@ -682,7 +661,7 @@ $ drupal generate:command
 			</p>
 
 			<aside class="notes">
-				<h3>enzo</h3>
+				<h3>jmolivas</h3>
 				<p>
 					Let me tell you about the awesome webprofiler project. Which is an implementation of Symfony WebProfiler.
 				</p>
@@ -694,13 +673,44 @@ $ drupal generate:command
 
 		<section data-background-video="assets/video/module-webprofiler.mp4">
 			<aside class="notes">
-				<h3>enzo</h3>
+				<h3>jmolivas</h3>
 				<p>
 					As you can see this integration enables users, to run benchmarks agains a Drupal installation.
 				</p>
 			</aside>
 		</section>
+	</section>
 
+	<section>
+		<section>
+			<h1 class="medium">Automate command execution</h1>
+<pre><code class="bash text-big">
+$ drupal chain
+  --file=~/path/to/start-project.yml
+
+</code></pre>
+			<aside class="notes">
+				<h3>enzo</h3>
+				<ul>
+					<li>We have mentioned how to run individual commands.</li>
+					<li>But if you are looking to automate command execution you can use the chain command.</li>
+				</ul>
+			</aside>
+		</section>
+
+		<section data-background-video="assets/video/chain.mp4">
+			<aside class="notes">
+				<h3>enzo</h3>
+				<ul>
+					<li>The chain command reads a configuration file and execute several commands based on the sequence defined in the configuration file.
+					</li>
+					<li>We decide to use a standard YAML file extension and not go with something like chain extension because we did not want to add a new Drupalism to the project.</li>
+				</ul>
+			</aside>
+		</section>
+	</section>
+
+	<section>
 		<section>
 			<h2>Other commands 1/3</h2>
 <pre><code class="bash text-big">
@@ -708,7 +718,6 @@ generate
  generate:authentication:provider   
  generate:entity:content
  generate:permissions
- generate:plugin:block
  generate:plugin:imageeffect
  generate:plugin:rest:resource
  generate:plugin:rulesaction
@@ -716,6 +725,9 @@ generate
  generate:theme
 
 </code></pre>
+			<aside class="notes">
+				<h3>omers</h3>
+			</aside>
 		</section>
 
 		<section>
@@ -732,6 +744,9 @@ password
  password:reset
 
 </code></pre>
+			<aside class="notes">
+				<h3>omers</h3>
+			</aside>
 		</section>
 
 <section>
@@ -741,23 +756,23 @@ rest
  rest:debug
  rest:disable
  rest:enable
-site
- site:maintenance
- site:mode
- site:status
 test
  test:debug
 
 </code></pre>
+			<aside class="notes">
+				<h3>omers</h3>
+			</aside>
 		</section>
 	</section>
+
 	<section>
 		<section data-background="#0076C2">
 			<h1 class="medium white">How to contribute?</h1>
 			<aside class="notes">
 				<h3>jmolivas</h3>
 				<p>
-					Now that enzo mentioned about integration, I like to talk about contribution.
+					Now that we mentioned about integration, I like to talk about contribution.
 				</p>
 				<p>
 					Anyone can contribute, you can add new features, write an integration with your custom module, improve transaltions and documentation.
@@ -820,6 +835,7 @@ $ composer update --no-dev
 			<a target="_blank"  href="https://www.drupal.org/coding-standards">https://www.drupal.org/coding-standards</a>
 			</p>
 			<aside class="notes">
+				<h3>jmolivas</h3>
 				<p>
 					Before commiting your code you need to know
 				</p>
@@ -848,6 +864,7 @@ $ composer update --no-dev
 				<a target="_blank"  href="http://bit.ly/console-travis">http://bit.ly/console-travis</a>
 			</p>
 			<aside class="notes">
+				<h3>jmolivas</h3>
 				<p>
 					<strong>We have the Platinum medal:</strong>	
 				</p>
@@ -861,26 +878,16 @@ $ composer update --no-dev
 		</section>
 
 		<section>
-			<h2>Code Analysis and tools.</h2>
+			<h2>PHPQA all-in-one Analyzer CLI tool </h2>
 			<hr/>
-			<p>
-				PHPUnit - PHP Testing Framework <br/>
-				<a href="https://phpunit.de/">https://phpunit.de/</a>
-			</p>
-			<br/>
-			<p>
-				PHP Coding Standards Fixer <br>
-				<a href="http://cs.sensiolabs.org/">http://cs.sensiolabs.org/</a>
-			</p>
-			<br/>
-			<p>
-				A pre-commit git hook, for running PHPUnit & PHP Coding Standards Fixer.
-			</p>
-			<br/>
-			<p>
-				JoliCi - Run your TravisCi builds locally <br/>
-				<a href="https://github.com/jolicode/JoliCi">https://github.com/jolicode/JoliCi</a>
-			</p>
+			<ul class="bullets">
+				<li>PHP Parallel Lint</li>
+				<li>PHP_CodeSniffer</li>
+				<li>PHPLOC</li>
+				<li>PHP Mess Detector</li>
+				<li>PHPUnit</li>
+			</ul>
+			<a href="https://github.com/jmolivas/phpqa">https://github.com/jmolivas/phpqa</a>
 		</section>
 
 		<section>
