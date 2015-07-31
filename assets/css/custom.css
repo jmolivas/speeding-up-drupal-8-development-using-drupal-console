@@ -126,7 +126,7 @@ ul li {
 }
 
 ul li {
-	list-style-type: none; 
+	list-style-type: none;
 }
 
 ul.bullets li {
@@ -183,15 +183,15 @@ img.avatar {
 }
 
 .reveal div.contributors .contributor {
-
-	float: left;
+	width: 83px;
+	display: inline-block;
 	padding: 2px;
 	/*padding-bottom: 5px;*/
 }
 
 .reveal div.contributors .contributor img {
-	max-width: 88px;
-	max-height: 88px;
+	max-width: 80px;
+	max-height: 80px;
 	border: 1px solid;
 	margin: 0px;
 	padding: 0px;
