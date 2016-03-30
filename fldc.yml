@@ -1,0 +1,69 @@
+commands:
+  - command: generate:module
+    options:
+        module: Example
+        machine-name: example
+        module-path: /modules/custom
+        description: 'My Example module'
+        core: 8.x
+        package: Custom
+        composer: true
+  - command: generate:controller
+    options:
+        module: example
+        class: HelloController
+        routes:
+            - title: Hello
+              method: hello
+              path: '/hello/{name}'
+  - command: generate:form:config
+    options:
+        module: example
+        class: ExampleForm
+        form-id: example_form
+        inputs:
+            -   name: uno
+                type: textfield
+                label: Uno
+                options: ''
+                description: 'Enter Uno field'
+                maxlength: '64'
+                size: '64'
+                default_value: ''
+                weight: '0'
+                fieldset: ''
+            -   name: dos
+                type: number
+                label: Dos
+                options: ''
+                description: 'Enter dos'
+                maxlength: null
+                size: null
+                default_value: ''
+                weight: '0'
+                fieldset: ''
+        routing: true
+        menu_link_gen: true
+        menu_link_title: 'Example Form'
+        menu_parent: system.admin_config_system
+        menu_link_desc: 'Example Form menu entry'
+  - command: generate:plugin:block
+    options:
+        module: example
+        class: ExampleBlock
+        label: example_block
+        plugin-id: example_block
+        theme-region: sidebar_second
+  - command: generate:entity:content
+    options:
+        module: example
+        entity-class: Foo
+        entity-name: foo
+        no-interaction: true
+  - command: module:install
+    arguments:
+        module:
+            - example
+  - command: cache:rebuild
+    arguments:
+        cache: all

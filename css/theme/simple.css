@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
  * A simple theme for reveal.js presentations, similar
@@ -16,6 +17,7 @@ body {
 
 .reveal {
   font-family: "Lato", sans-serif;
+  font-weight: bold;
   font-size: 36px;
   font-weight: normal;
   letter-spacing: -0.02em;
@@ -39,6 +41,7 @@ body {
   color: black;
   font-family: "News Cycle", Impact, sans-serif;
   line-height: 0.9em;
+  font-weight: bold;
   letter-spacing: 0.02em;
   text-transform: none;
   text-shadow: none; }
